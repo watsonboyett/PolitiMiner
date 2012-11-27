@@ -31,11 +31,11 @@ print "found " + str(x) + " entities! \n"
 
 d_attrs = ['True','Mostly-True','Half-True','Mostly-False','False','Pants-on-Fire']
 d_type = ['c','c','c','c','c','c']
-# skip, if there are no people
+# skip, if there are no people (not sure why this error occurs..)
 if x>0:
 
     # write attributes to file
-    f = open('./data.tab','w')
+    f = open('../data/data.tab','w')
     f.write('name\t')
     f.write('assoc\t')
     for j in range(len(d_attrs)):
